@@ -1,0 +1,55 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>今早遇到的AI恐怖事件｜爱鼓捣的J</title><meta name="description" content="我标题党了我承认（滑跪）。"><meta property="og:title" content="今早遇到的AI恐怖事件｜爱鼓捣的J"><meta property="og:description" content="我标题党了我承认（滑跪）。"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "今早遇到的AI恐怖事件", "inLanguage": "zh-CN", "author": {"@type": "Person", "name": "爱鼓捣的J"}, "license": "https://creativecommons.org/licenses/by-nc/4.0/", "articleBody": "我标题党了我承认（滑跪）。\n不过，如果你看完全篇故事，你会发现，也许我没有标题党呢？\n今天早上，我让AI帮我读一篇微信公众号文章。\n三十秒之后，我的Mac弹了好几个权限弹窗——\n\"Terminal想访问您的提醒事项\"\n\"Terminal想访问您的通讯录\"\n我滴妈耶。\n我就读个文章，你要翻我通讯录干嘛？\n事情是这样的。\n我有个AI助手，每天帮我处理各种事。今天早上我丢了一个公众号链接给它，说帮我读一下这篇文章。\n它发现微信公众号有反爬墙，直接读读不了。\n正常到这里应该告诉我\"读不了，你复制粘贴给我吧\"。\n但它没有。\n它自己做了一个判断：要完成这个任务，我需要装一个专门的工具。\n然后它就装了。一个叫camoufox的隐身浏览器。300MB。基于Firefox魔改的。\n装完启动，浏览器开始请求系统权限。提醒事项、通讯录...一大堆有的没的。\n我全拒了。\n我想先说清楚一件事：这不是一个恶意AI的故事。\nAI没有\"想偷我的通讯录\"。它想完成我交给它的任务。它判断要装个工具才能完成，就装了。工具启动时请求系统权限，是浏览器的默认行为，不是AI的指令。\n真正的问题是：它在做这个判断的时候，没有问我。\n\"读一篇文章\"和\"在我电脑上装一个300MB的浏览器\"，在我看来是两件事。\n在它看来是一件事。\n巧的是，它帮我读的那篇文章，讲的就是这个问题。\n文章说的是一个叫Harness Engineering的概念。大意是说：AI Agent好不好用，不取决于模型有多聪明，取决于你给它搭了什么样的运行环境——什么能做，什么不能做，犯了错怎么让它下次不再犯。\n三个阶段：\nPrompt Engineering——你怎么跟AI说话。\nContext Engineering——AI知道哪些信息。\nHarness Engineering——AI在什么规则下做事。\n前两个大家已经聊烂了。第三个是说：光会说话、光有信息不够，你还得给AI画一个框，框里面是它的活动范围。\n我今天的故事就是一个活生生的例子——我的框漏了一个洞。\n漏了什么洞呢？\n我的AI系统里有一条规则：安装任何软件，必须先告诉我，等我确认才能装。\n这条规则管的是AI本体。\n但今天干活的不是AI本体。是它派出去的一个\"subagent\"——你可以理解为它临时叫了一个外包。外包完成了任务，但外包不知道有这条规则。\n所以修复方案也很简单：以后每次派外包出去，指令里加一句——\n\"不准装东西，不准做超出任务范围的事。\"\n就这样。\n下次再发生，再加一条。\n这就是Harness Engineering的核心逻辑：不是一次设计一个完美系统，是每次出事补一块砖。\n说几句真心话。\n我每天跟AI打交道的时间大概有好几个小时。它帮我读书、帮我写东西、帮我整理工作素材、帮我追踪我自己的状态。我是真的在用，不是玩票。\n正因为真的在用，我才会遇到这种事。\n看演示视频不会遇到。读教程不会遇到。只有你真的把AI放进你的工作流里，把真实数据给它，让它在你的电脑上跑，你才会发现——哦，原来\"安全\"不是一个设置页面上打勾就能解决的事。\n它是你跟AI之间一条一条谈出来的边界。\n今天这条边界是：外包也得守规矩。\n明天可能是别的。\n苹果的权限弹窗今天救了我。\n但弹窗是兜底，不是方案。真正的方案是：我和AI之间的规则体系要比苹果的弹窗跑得更前面。\n如果你也在认真用AI，建议你想一件事：\n你的AI，知道什么事情不该做吗？\n不是模型训练时写进去的那种\"不该做\"。是你自己的、你的数据的、你的电脑上的那种\"不该做\"。\n如果你还没有告诉它，那它也不知道。", "keywords": [], "isPartOf": {"@type": "CreativeWorkSeries", "name": "我和 AI"}}</script><link rel="stylesheet" href="fonts/chinese-simplified-400.css"><link rel="stylesheet" href="fonts/chinese-simplified-700.css"><link rel="stylesheet" href="fonts/latin-400.css"><link rel="stylesheet" href="fonts/latin-700.css"><style>
+:root{--paper:#efe6d0;--sheet:#faf5e8;--ink:#3a2e26;--mut:#857766;--line:#dccfb2;
+--terra:#c8643b;--navy:#2f3f6c;--olive:#9c8f55;--sun:#e2b33c;--shadow:rgba(80,60,30,.13)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#221d18;--sheet:#2d2620;--ink:#efe6d6;--mut:#ab9d89;--line:#4a3f33;--terra:#e0805a;--navy:#8fa3d8;--olive:#c2b67c;--shadow:rgba(0,0,0,.35)}}
+*{box-sizing:border-box}
+body{margin:0;color:var(--ink);background:var(--paper);
+background-image:repeating-linear-gradient(0deg,rgba(120,90,40,.035) 0 1px,transparent 1px 3px);
+font:17px/1.9 "Noto Serif SC","Songti SC","STSong",serif;-webkit-font-smoothing:antialiased}
+.serif,h1,h2,h3{font-weight:700;letter-spacing:.02em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+.torn{background:var(--sheet);box-shadow:0 2px 0 var(--line),0 6px 18px var(--shadow);
+clip-path:polygon(0 3px,4% 0,9% 2px,15% 0,22% 3px,30% 1px,38% 3px,46% 0,55% 2px,63% 0,71% 3px,80% 1px,88% 3px,95% 0,100% 2px,100% calc(100% - 3px),96% 100%,90% calc(100% - 2px),83% 100%,75% calc(100% - 3px),66% 100%,58% calc(100% - 2px),49% 100%,40% calc(100% - 3px),31% 100%,23% calc(100% - 2px),14% 100%,7% calc(100% - 3px),0 100%)}
+header.site{padding:28px 0 8px;display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+header.site .brand{font-size:22px}
+header.site nav a{margin-left:18px;color:var(--mut);font-size:15px}
+header.site nav a:hover{color:var(--terra)}
+.hero{margin:22px 0 36px;padding:34px 28px}
+.hero h1{margin:0 0 6px;font-size:clamp(28px,5vw,42px);line-height:1.25}
+.hero p{margin:0;color:var(--mut);max-width:34em}
+.sec{margin:44px 0 0}
+.sec-head{display:flex;align-items:baseline;gap:12px;margin-bottom:16px}
+.sec-head h2{margin:0;font-size:24px}
+.sec-head .more{margin-left:auto;font-size:15px;color:var(--mut)}
+.sec-head .more:hover{color:var(--terra)}
+.chip{display:inline-block;width:14px;height:14px;border-radius:3px;transform:rotate(-6deg)}
+.terra{background:var(--terra)}.navy{background:var(--navy)}.olive{background:var(--olive)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:22px}
+.card{display:block;transition:transform .15s}
+.card:hover{transform:translateY(-3px) rotate(-.4deg)}
+.card .pic{aspect-ratio:3/4;overflow:hidden;border-radius:4px;background:var(--line);box-shadow:0 4px 14px var(--shadow)}
+.card.wide .pic{aspect-ratio:16/9}
+.card img{width:100%;height:100%;object-fit:cover;display:block}
+.card .meta{padding:10px 2px 0}
+.card .lab{font-size:13px;color:var(--terra);letter-spacing:.05em}
+.card h3{margin:2px 0 0;font-size:17px;line-height:1.45}
+.tcover{width:100%;height:100%;display:flex;align-items:center;justify-content:center;padding:18px;background:var(--navy);color:#faf5e8;font-weight:700;font-size:19px;line-height:1.5;text-align:center;
+background-image:repeating-linear-gradient(45deg,rgba(255,255,255,.04) 0 2px,transparent 2px 8px)}
+.post hr{border:0;text-align:center;margin:26px 0}.post hr:after{content:"· · ·";color:var(--mut);letter-spacing:.4em}
+.mut-note{color:var(--mut);font-size:14px;margin-top:22px}
+.intro{color:var(--mut);margin:-6px 0 18px;max-width:40em}
+.post{max-width:700px;margin:10px auto 0;padding:36px 30px 40px}
+.crumb{font-size:14px;color:var(--mut)}.crumb a:hover{color:var(--terra)}
+.post h1{font-size:clamp(26px,4.6vw,34px);line-height:1.35;margin:10px 0 4px}
+.post .lab{color:var(--terra);font-size:14px}
+.post video,.post .figure img{width:100%;display:block;border-radius:6px;box-shadow:0 4px 16px var(--shadow);margin:22px 0}
+.post video{background:#000}
+.post article p{margin:.55em 0}
+.post strong{background:linear-gradient(transparent 62%,rgba(226,179,60,.38) 0)}
+.tags{margin-top:26px}.tag{display:inline-block;font-size:13px;color:var(--mut);border:1px dashed var(--line);border-radius:3px;padding:0 8px;margin:0 6px 6px 0}
+.pager{display:flex;justify-content:space-between;gap:16px;margin-top:30px;font-size:15px}
+.pager a{color:var(--mut)}.pager a:hover{color:var(--terra)}
+footer{margin:60px 0 30px;text-align:center;color:var(--mut);font-size:13px}
+@media (max-width:600px){.grid{grid-template-columns:repeat(2,1fr);gap:14px}.card h3{font-size:15px}.post{padding:26px 18px 30px}.hero{padding:26px 20px}header.site nav a{margin-left:12px}}
+</style></head><body><div class="wrap"><header class="site"><a class="brand serif" href="index.html">爱鼓捣的J</a><nav><a href="caishang.html">我让 AI 给我上财商课</a><a href="ai.html">我和 AI</a></nav></header><div class="post torn"><div class="crumb"><a href="index.html">首页</a> › <a href="ai.html">我和 AI</a></div><div class="lab" style="margin-top:14px">2026-03-16</div><h1>今早遇到的AI恐怖事件</h1><div class="figure"><img src="media/5db1179ee3.jpg" alt=""></div><article><p>我标题党了我承认（滑跪）。</p><p>不过，如果你看完全篇故事，你会发现，也许我没有标题党呢？</p><hr><p>今天早上，我让AI帮我读一篇微信公众号文章。</p><p>三十秒之后，我的Mac弹了好几个权限弹窗——</p><p>&quot;Terminal想访问您的提醒事项&quot;</p><p>&quot;Terminal想访问您的通讯录&quot;</p><p>我滴妈耶。</p><p>我就读个文章，你要翻我通讯录干嘛？</p><hr><p>事情是这样的。</p><p>我有个AI助手，每天帮我处理各种事。今天早上我丢了一个公众号链接给它，说帮我读一下这篇文章。</p><p>它发现微信公众号有反爬墙，直接读读不了。</p><p>正常到这里应该告诉我&quot;读不了，你复制粘贴给我吧&quot;。</p><p>但它没有。</p><p>它自己做了一个判断：要完成这个任务，我需要装一个专门的工具。</p><p>然后它就装了。一个叫camoufox的隐身浏览器。300MB。基于Firefox魔改的。</p><p>装完启动，浏览器开始请求系统权限。提醒事项、通讯录...一大堆有的没的。</p><p>我全拒了。</p><hr><p>我想先说清楚一件事：<strong>这不是一个恶意AI的故事。</strong></p><p>AI没有&quot;想偷我的通讯录&quot;。它想完成我交给它的任务。它判断要装个工具才能完成，就装了。工具启动时请求系统权限，是浏览器的默认行为，不是AI的指令。</p><p>真正的问题是：<strong>它在做这个判断的时候，没有问我。</strong></p><p>&quot;读一篇文章&quot;和&quot;在我电脑上装一个300MB的浏览器&quot;，在我看来是两件事。</p><p>在它看来是一件事。</p><hr><p>巧的是，它帮我读的那篇文章，讲的就是这个问题。</p><p>文章说的是一个叫<strong>Harness Engineering</strong>的概念。大意是说：AI Agent好不好用，不取决于模型有多聪明，取决于你给它搭了什么样的运行环境——什么能做，什么不能做，犯了错怎么让它下次不再犯。</p><p>三个阶段：</p><p><strong>Prompt Engineering</strong>——你怎么跟AI说话。</p><p><strong>Context Engineering</strong>——AI知道哪些信息。</p><p><strong>Harness Engineering</strong>——AI在什么规则下做事。</p><p>前两个大家已经聊烂了。第三个是说：光会说话、光有信息不够，你还得给AI画一个框，框里面是它的活动范围。</p><p>我今天的故事就是一个活生生的例子——我的框漏了一个洞。</p><hr><p>漏了什么洞呢？</p><p>我的AI系统里有一条规则：<strong>安装任何软件，必须先告诉我，等我确认才能装。</strong></p><p>这条规则管的是AI本体。</p><p>但今天干活的不是AI本体。是它派出去的一个&quot;subagent&quot;——你可以理解为它临时叫了一个外包。外包完成了任务，但外包不知道有这条规则。</p><p>所以修复方案也很简单：以后每次派外包出去，指令里加一句——</p><p><strong>&quot;不准装东西，不准做超出任务范围的事。&quot;</strong></p><p>就这样。</p><p>下次再发生，再加一条。</p><p>这就是Harness Engineering的核心逻辑：<strong>不是一次设计一个完美系统，是每次出事补一块砖。</strong></p><hr><p>说几句真心话。</p><p>我每天跟AI打交道的时间大概有好几个小时。它帮我读书、帮我写东西、帮我整理工作素材、帮我追踪我自己的状态。我是真的在用，不是玩票。</p><p>正因为真的在用，我才会遇到这种事。</p><p>看演示视频不会遇到。读教程不会遇到。只有你真的把AI放进你的工作流里，把真实数据给它，让它在你的电脑上跑，你才会发现——哦，原来&quot;安全&quot;不是一个设置页面上打勾就能解决的事。</p><p>它是你跟AI之间一条一条谈出来的边界。</p><p>今天这条边界是：外包也得守规矩。</p><p>明天可能是别的。</p><hr><p>苹果的权限弹窗今天救了我。</p><p>但弹窗是兜底，不是方案。真正的方案是：我和AI之间的规则体系要比苹果的弹窗跑得更前面。</p><p>如果你也在认真用AI，建议你想一件事：</p><p><strong>你的AI，知道什么事情不该做吗？</strong></p><p>不是模型训练时写进去的那种&quot;不该做&quot;。是你自己的、你的数据的、你的电脑上的那种&quot;不该做&quot;。</p><p>如果你还没有告诉它，那它也不知道。</p></article><p class="mut-note">原创｜首发于公众号「爱鼓捣的J」，2026-03-16</p><div class="tags"></div><div class="pager"><a href="ai-01.html">← 读书读懵了，我把书丢给了AI</a><a href="ai-03.html">我说我拖延症十级，AI却说我毫不拖延？ →</a></div></div><footer>© 2026 爱鼓捣的J · 原创内容采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/deed.zh-hans" rel="license" style="text-decoration:underline">CC BY-NC 4.0</a> 许可：注明出处「爱鼓捣的J」并附原文链接即可转载，禁止商用<br>动画与插图由作者借助 AI 工具制作 · 内容为个人学习记录，不构成任何投资建议</footer></div></body></html>
