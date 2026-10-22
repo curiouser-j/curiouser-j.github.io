@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://curiouser-j.github.io/sitemap.xml
